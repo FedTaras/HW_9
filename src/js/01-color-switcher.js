@@ -20,9 +20,9 @@ function changeColor() {
 }
 
 function stopFn() {
+  clearInterval(id);
   ref.stopBtn.disabled = true;
   ref.startBtn.disabled = false;
-  clearInterval(id);
 }
 
 function getRandomHexColor() {
