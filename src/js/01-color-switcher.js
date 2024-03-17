@@ -12,17 +12,17 @@ ref.stopBtn.addEventListener('click', stopFn);
 ref.stopBtn.disabled = true;
 
 function changeColor() {
+  ref.startBtn.disabled = true;
+  ref.stopBtn.disabled = false;
   id = setInterval(() => {
     ref.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-  ref.startBtn.disabled = true;
-  ref.stopBtn.disabled = false;
 }
 
 function stopFn() {
-  clearInterval(id);
   ref.stopBtn.disabled = true;
   ref.startBtn.disabled = false;
+  clearInterval(id);
 }
 
 function getRandomHexColor() {
