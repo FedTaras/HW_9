@@ -9,7 +9,7 @@ const ref = {
 ref.startBtn.addEventListener('click', changeColor);
 ref.stopBtn.addEventListener('click', stopFn);
 
-ref.stopBtn.disabled = true;
+// ref.stopBtn.disabled = true;
 
 function changeColor() {
   ref.startBtn.disabled = true;
