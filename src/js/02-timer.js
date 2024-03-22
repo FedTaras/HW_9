@@ -12,6 +12,8 @@ const ref = {
   minutes: document.querySelector('[data-minutes]'),
   seconds: document.querySelector('[data-seconds]'),
   input: document.querySelector('input#datetime-picker'),
+  timerDiv: document.querySelector('.timer'),
+  span: document.querySelectorAll('span'),
 };
 ref.startBtn.disabled = true;
 
@@ -82,3 +84,11 @@ function convertMs(ms) {
 // console.log(convertMs(date.getTime())); // {days: 0, hours: 0, minutes: 0, seconds: 2}
 // console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
 // console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}
+
+// ref.timerDiv.style.display = 'flex';
+// ref.timerDiv.style.padding = '15px';
+// ref.span.style.
+// console.log(ref.span);
+//   border: 1px solid black;
+//   width: 153px;
+// }
